@@ -2,10 +2,12 @@ version: '3'
 
 services:
   app:
-    container_name: redux-dom
+    container_name: app
     build:
+      target: prod
       context: .
       dockerfile: Dockerfile
-    command: ["npm", "start"]
+    # command: ["npm", "start"]
+    # image: testing-app //seria lo mismo con esto
     ports:
-      - 3000:3000
+      - 3000:80 #puerto 3000 de mi localhost con el puerto 80 de la imagen Nginx que expuse

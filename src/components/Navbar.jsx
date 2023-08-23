@@ -11,10 +11,10 @@ export const Navbar = () => {
             <li><Link to="/"><span>Login</span></Link></li>
             <li><Link to="/home"><span>Home</span></Link></li>
             <li><Link to="/about"><span>About</span></Link></li>
-            <li><Link to="/logout" onClick={() => {
+            <li onClick={() => {
                localStorage.removeItem("user")
                dispatch(logout())
-            }}><span>Logout</span></Link></li>
+            }}>Logout</li>
         </ol>
       </>
    )
