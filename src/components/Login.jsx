@@ -16,7 +16,7 @@ export const Login = ({isAllowed, redirect}) => {
 
    return (
       <form onSubmit={handleFormLogin}>
-         <h1>Presiona login para ingresar.</h1>
+         <h1>Presiona login para ingresar</h1>
         <button type="submit">Login</button>
       </form>
    )
